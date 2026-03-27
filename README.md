@@ -2,7 +2,7 @@
 
 **不要在 prompt 调试上浪费时间，把精力留给真正的科研。**
 
-本项目改编自 Leey21/awesome-ai-research-writing。衷心感谢原作者提供的基础框架与启发。专为管理科学与运营管理 (MS/OM) 研究者打造。内容针对 MS, OR, M&SOM, POM 等顶级期刊的论文写作与审稿标准进行了重构。
+**本项目改编自 Leey21/awesome-ai-research-writing。衷心感谢原作者提供的基础框架与启发。专为管理科学与运营管理 (MS/OM) 研究者打造。内容针对 MS, OR, M&SOM, POM 等顶级期刊的论文写作与审稿标准进行了重构。**
 ---
 
 ## 📑 目录 (Table of Contents)
