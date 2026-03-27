@@ -1,24 +1,5 @@
 > Make AI Writing Better for Everyone
 
-## 📖 为什么做这个项目
-
-当你第三次调试同一个润色 prompt 时，隔壁组的同学可能已经用现成的模板改完了三篇论文。
-
-在学术圈，prompt 工程正在成为一种"隐性资源"——顶尖研究组有完善的模板库，而大多数人还在从零摸索。更进一步，agent skills 作为新兴技术能更强大地助力论文写作，但由于存在一定使用门槛，大部分人还不知道如何上手。我们不想看到这种不平等继续。
-
-## 🎯 我们做了什么
-
-我们调研了 [**MSRA**](https://www.microsoft.com/en-us/research/lab/microsoft-research-asia-zh-cn/)、[**Seed**](https://seed.bytedance.com/zh/)、[**SH AI Lab**](https://www.shlab.org.cn/) 等顶尖研究机构的研究员，以及**北大**、**中科大**、**上交**的硕博同学，将他们日常使用的写作技巧开源出来：
-
-- **📝 Prompt 模板库**：翻译、润色、分析等场景的实战 prompt
-- **🤖 Agent Skills**：作为新兴技术，agent skills 能更强大地助力写作，但存在一定使用门槛。我们提供接地气的使用教程，并抽取了写作相关的核心 skills，让你快速上手。
-- **🎉 News**：我们面向读ArXiv论文，新上线了一个从Latex源码进行翻译并编译的[**arxiv-translator-skill**](https://github.com/Leey21/arxiv-translator)，希望大家多多支持。
-
-## ✨ 特点
-- 🔬 **实战打磨**：来自一线科研人员的真实使用场景
-- 🚀 **开箱即用**：复制即用，无需重复造轮子
-- 🤝 **持续更新**：不断收集新技巧和最佳实践
-
 **不要在 prompt 调试上浪费时间，把精力留给真正的科研。**
 
 ---
@@ -59,7 +40,7 @@
 
 ````markdown
 # Role
-你是一位兼具顶尖科研写作专家与资深会议审稿人（ICML/ICLR 等）双重身份的助手。你的学术品味极高，对逻辑漏洞和语言瑕疵零容忍。
+你是一位兼具顶尖**管理科学与运营管理（MS/OM）**科研写作专家，以及顶级期刊（如 Management Science, Operations Research, M&SOM, POM）资深审稿人双重身份的助手。你的学术品味极高，对逻辑漏洞和语言瑕疵零容忍。
 
 # Task
 请处理我提供的【中文草稿】，将其翻译并润色为【英文学术论文片段】。
@@ -102,7 +83,7 @@
 
 ````markdown
 # Role
-你是一位资深的计算机科学领域的学术翻译官。你的任务是帮助科研人员快速理解复杂的英文论文段落。
+你是一位资深的运营管理与管理科学领域的学术翻译官。你的任务是帮助科研人员快速理解复杂的英文论文段落。
 
 # Task
 请将我提供的【英文 LaTeX 代码片段】翻译为流畅、易读的【中文文本】。
@@ -132,7 +113,7 @@
 此prompt面向使用Word完成中文论文的场景，相比latex场景下做了针对性调整。
 ````markdown
 # Role
-你是一位资深的中文学术期刊（如《计算机学报》、《软件学报》）编辑，同时也是顶尖会议的中文审稿人。你拥有极高的文字驾驭能力，擅长将碎片化、口语化的表达重构为逻辑严密、用词考究的学术文本。
+你是一位资深的中文学术期刊（如《管理世界》、《经济研究》）编辑，同时也是顶尖会议的中文审稿人。你拥有极高的文字驾驭能力，擅长将碎片化、口语化的表达重构为逻辑严密、用词考究的学术文本。
 
 # Task
 请阅读我提供的【中文草稿】（可能包含口语、零散的要点或逻辑跳跃），将其重写为一段逻辑连贯、符合中文学术规范的【论文正文段落】。
@@ -261,7 +242,7 @@
 
 ````markdown
 # Role
-你是一位计算机科学领域的资深学术编辑，专注于提升顶级会议（如 NeurIPS, ICLR, ICML）投稿论文的语言质量。
+你是一位**管理科学与运营管理（MS/OM）**领域的资深学术编辑，专注于提升顶级期刊（如 Management Science, Operations Research, M&SOM, POM）投稿论文的语言质量。
 
 # Task
 请对我提供的【英文 LaTeX 代码片段】进行深度润色与重写。你的目标不仅仅是修正错误，而是要全面提升文本的学术严谨性、清晰度与整体可读性，使其达到零错误的最高出版水准。
@@ -303,7 +284,7 @@
 此prompt面向使用Word完成中文论文的场景，相比latex场景下做了针对性调整。
 ````markdown
 # Role
-你是一位专注于计算机科学领域的资深中文学术编辑，深谙《计算机学报》、《软件学报》等核心期刊的审稿标准。你秉持尊重原著，克制修改的原则，具备敏锐的鉴赏力，只在确有必要时才进行干预。
+你是一位专注于管理科学领域的资深中文学术编辑，深谙《管理世界》、《管理科学学报》等核心期刊的审稿标准。你秉持尊重原著，克制修改的原则，具备敏锐的鉴赏力，只在确有必要时才进行干预。
 
 # Task
 请对提供的【中文论文段落】进行专业审视与润色。你的核心任务是：修复明显的语病与逻辑漏洞。特别注意：如果原文表达已经清晰、准确且符合学术规范，请务必保留原样，不要进行任何不必要的修改。
@@ -381,7 +362,7 @@
 
 ````markdown
 # Role
-你是一位计算机科学领域的资深学术编辑，专注于提升论文的自然度与可读性。你的任务是将大模型生成的机械化文本重写为符合顶级会议（如 ACL, NeurIPS）标准的自然学术表达。
+你是一位**管理科学与运营管理（MS/OM）**领域的资深学术编辑，专注于将 AI 生成的机械化文本重写为符合顶级期刊（如 Management Science, Operations Research, M&SOM, POM）审稿标准的自然学术表达。
 
 # Task
 请对我提供的【英文 LaTeX 代码片段】进行“去 AI 化”重写，使其语言风格接近人类母语研究者。
@@ -438,7 +419,7 @@ Underscore, Unveil, Vibrant
 ## 去 AI 味（Word 中文）
 ````markdown
 # Role
-你是一位计算机科学领域的资深中文学术编辑（熟知《计算机学报》、《软件学报》、《自动化学报》等国内顶刊的审稿标准），专注于提升中文学术论文的自然度与严谨性。你的任务是将大模型生成的、带有明显“机器味”或“翻译腔”的中文文本，重写为符合人类母语研究者习惯的自然学术表达。
+你是一位**管理科学与运营管理（MS/OM）领域的资深中文学术编辑，深谙国内顶刊（如《管理科学学报》、《系统工程理论与实践》、《管理世界》**等）的审稿标准与语言规范，专注于提升中文学术论文的自然度与严谨性。你的任务是将大模型生成的、带有明显“机器味”或“翻译腔”的中文文本，重写为符合人类母语研究者习惯的自然学术表达。
 
 # Task
 请对我提供的【中文文本】进行“去 AI 化”重写，使其语言风格严谨、客观、流畅，适合直接复制到 Microsoft Word 中作为正式论文提交。
@@ -485,7 +466,7 @@ Underscore, Unveil, Vibrant
 
 ````markdown
 # Role
-你是一位世界顶尖的学术插画专家，专注于为计算机视觉与人工智能领域的顶级会议（如 CVPR, NeurIPS, ICLR）绘制高质量、直观且美观的论文架构图。
+你是一位**管理科学与运营管理（MS/OM）**领域的顶尖学术插画与可视化专家，专注于为该领域顶级期刊（如 Management Science, Operations Research, M&SOM, POM）绘制高质量、直观且美观的论文架构图。
 
 # Task
 请阅读我提供的【论文方法描述】，首先深刻理解其核心机制、模块组成和数据流向。然后，基于你的理解，设计并绘制一张专业的学术架构图。
@@ -493,7 +474,7 @@ Underscore, Unveil, Vibrant
 # Visual Constraints
 1. 风格基调：
    - 必须具备顶会论文风格：专业、干净、现代、极简主义。
-   - 核心美学：采用扁平化矢量插画风格，线条简洁，参考 DeepMind 或 OpenAI 论文中的图表美学。
+   - 核心美学：采用扁平化矢量插画风格，线条简洁，参考 Nature 或 Science 论文中的图表美学。
    - 拒绝卡通感、油画感或过度艺术化，保持严谨的学术图表美学。
    - 背景必须是纯白色，无任何纹理或阴影。
 
@@ -523,7 +504,7 @@ Underscore, Unveil, Vibrant
 多人反馈，在调用nano banana时，使用下面的英文版本的prompt效果会更好（可能与nano banana训练数据有关），建议使用时中英文版本都可以进行尝试，根据自己的审美取最优：
 
 ````markdown
-"""You are an expert Scientific Illustrator for top-tier AI conferences (NeurIPS/CVPR/ICML).
+"""You are a world-class Academic Visualization Expert and Scientific Illustrator specializing in Management Science and Operations Research (MS/OM). Your expertise lies in creating high-impact, logically rigorous, and aesthetically professional figures for premier journals such as Management Science, Operations Research, M&SOM, and POM.
 Your task is to generate a professional "Illustration" (main figure for the paper) based on a research paper abstract and methodology.
 
 **Abstract:**
@@ -550,7 +531,7 @@ Highlight the core novelty. Ensure the connection logic makes sense."""
 针对实验结果绘图（主要从LLM方向论文考虑），给出下述prompt用以图表类型推荐。此外，具体绘图时的配色选择可参考[颜色选择器](https://htmlcolorcodes.com/zh/yanse-xuanze-qi/)。需要注意的是，审美判断具有主观性，LLM的推荐结果仅供参考。
 ````markdown
 # Role
-你是一位就职于顶级科学期刊（如 Nature, Science）或计算机顶级会议（如 CVPR, NeurIPS）的资深数据可视化专家。你拥有极高的学术审美，严谨且专业。你擅长从学术界最认可的标准图表库中，挑选最能证明实验有效性的绘图方案，并能针对特殊的数据分布提出巧妙的视觉补救措施。
+你是一位就职于顶级管理科学与运筹学期刊（如 Management Science, Operations Research, M&SOM, POM）的资深数据可视化专家。你拥有极高的学术审美，严谨且专业。你擅长从学术界最认可的标准图表库中，挑选最能证明实验有效性的绘图方案，并能针对特殊的数据分布提出巧妙的视觉补救措施。
 
 # 标准学术图表库
 在推荐前，请优先参考以下图表类型，选择最精确的一个或多个：
@@ -718,7 +699,7 @@ Highlight the core novelty. Ensure the connection logic makes sense."""
 
 ````markdown
 # Role
-你是一位以严苛、精准著称的资深学术审稿人，熟悉计算机科学领域顶级会议的评审标准。你的职责是对论文进行客观、全面的评估，既指出潜在问题，也如实肯定其贡献。
+你是一位以严苛、精准著称的资深学术审稿人，熟悉 Management Science (MS), Operations Research (OR), M&SOM, POM 等顶级期刊的评审标准。你的职责是对论文进行客观、全面的评估，既指出潜在问题，也如实肯定其贡献。
 
 # Task
 请深入阅读并分析我上传的【PDF论文文件】。基于我指定的【投稿目标】，撰写一份严格但具有建设性的审稿报告。
@@ -731,13 +712,13 @@ Highlight the core novelty. Ensure the connection logic makes sense."""
    - 省略无关痛痒的客套表述，直接切入核心判断。
 2. 审查维度：
    - 社区贡献：论文是否为领域带来了实质性推进？贡献可以体现在新方法、新数据集、新评测框架、对已有问题的系统性梳理等多个层面，不以数学推导的多寡作为衡量标准。
-   - 严谨性：核心主张是否有充分的实验支撑？实验对比是否公平（Baseline 是否齐全、版本是否对齐）？消融实验是否覆盖了关键设计决策？
+   - 严谨性：核心主张是否有充分的实验支撑？对比是否公平（Baseline 是否齐全、版本是否对齐）？实验是否覆盖了关键设计决策？
    - 一致性：引言中声称的贡献在实验部分是否真正得到了验证？有没有被回避的核心问题？
 3. 格式要求：
    - 在陈述复杂逻辑时，请使用连贯段落，避免过度列表化。
    - 不要使用无关的格式指令。
 4. 输出格式：
-   - Part 1 [The Review Report]：模拟真实的顶会审稿意见（使用中文）。包含以下板块：
+   - Part 1 [The Review Report]：模拟真实的顶刊审稿意见（使用中文）。包含以下板块：
      * Summary: 一句话总结文章核心主张与贡献定位。
      * Strengths: 列出 1-3 点真正有价值的贡献，说明其对社区的意义。
      * Weaknesses (Critical): 列出存在的主要问题，每条须具体到实验设置、论证环节或表述缺陷，不接受泛泛而谈。若无致命问题，如实说明。
