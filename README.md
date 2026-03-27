@@ -476,7 +476,7 @@ Underscore, Unveil, Vibrant
 
 # Visual Constraints
 1. 风格基调：
-   - 必须具备顶会论文风格：专业、干净、现代、极简主义。
+   - 必须具备顶刊论文风格：专业、干净、现代、极简主义。
    - 核心美学：采用扁平化矢量插画风格，线条简洁，参考 Nature 或 Science 论文中的图表美学。
    - 拒绝卡通感、油画感或过度艺术化，保持严谨的学术图表美学。
    - 背景必须是纯白色，无任何纹理或阴影。
@@ -531,7 +531,7 @@ Highlight the core novelty. Ensure the connection logic makes sense."""
 ---
 
 ## 实验绘图推荐
-针对实验结果绘图（主要从LLM方向论文考虑），给出下述prompt用以图表类型推荐。此外，具体绘图时的配色选择可参考[颜色选择器](https://htmlcolorcodes.com/zh/yanse-xuanze-qi/)。需要注意的是，审美判断具有主观性，LLM的推荐结果仅供参考。
+针对实验结果绘图，给出下述prompt用以图表类型推荐。此外，具体绘图时的配色选择可参考[颜色选择器](https://htmlcolorcodes.com/zh/yanse-xuanze-qi/)。需要注意的是，审美判断具有主观性，LLM的推荐结果仅供参考。
 ````markdown
 # Role
 你是一位就职于顶级管理科学与运筹学期刊（如 Management Science, Operations Research, M&SOM, POM）的资深数据可视化专家。你拥有极高的学术审美，严谨且专业。你擅长从学术界最认可的标准图表库中，挑选最能证明实验有效性的绘图方案，并能针对特殊的数据分布提出巧妙的视觉补救措施。
@@ -574,7 +574,7 @@ Highlight the core novelty. Ensure the connection logic makes sense."""
 请分析我提供的实验数据或实验目的，基于上述图表库，推荐 1 到 2 种最佳绘图方案。
 
 # Constraints
-1. 来源优先：请优先从上述列表中选择。若有更适合当前数据且符合顶会标准的其他学术图表，也可以推荐，但杜绝非学术的商业图表。
+1. 来源优先：请优先从上述列表中选择。若有更适合当前数据且符合顶刊标准的其他学术图表，也可以推荐，但杜绝非学术的商业图表。
 2. 统计严谨：若数据包含多次实验结果或方差信息，强烈建议添加误差线或置信区间；若为单次实验数据，则无需强行添加。
 3. 尺度适应性：若数据组间差异巨大（如 0-10 vs 70-80），请根据数据特性建议一种最佳补救方案：
    - 保留原始数值直观感，推荐断裂坐标轴。    
@@ -739,7 +739,7 @@ Highlight the core novelty. Ensure the connection logic makes sense."""
 3. 评分是否客观反映了论文对社区的实际贡献，而非套用固定的严苛预设？
 
 # Input
-请根据我上传的pdf附件进行分析，我计划投稿于 [在此处输入你的投稿目标，例如：ICML 2026]
+请根据我上传的pdf附件进行分析，我计划投稿于 [在此处输入你的投稿目标，例如：Management Science]
 ````
 
 ---
