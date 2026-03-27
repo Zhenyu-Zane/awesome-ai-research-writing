@@ -1,4 +1,4 @@
-# MS/OM Research Writing Tools
+# MS/OM Research Writing Prompt Collection
 
 ### Make AI Writing Better for Everyone
 
